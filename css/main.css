@@ -1,0 +1,91 @@
+/* ________________________________
+BASE
+________________________________ */
+
+:root {
+ --borderCrimson: 2px crimson solid;
+ --borderBlack: 2px black solid;
+ --borderForestGreen: 2px forestgreen solid;
+ --borderCyan: 2px cyan solid;
+ --borderDarkBlue: 2px darkblue solid;
+ --borderBlueViolet: 2px blueviolet solid;
+ --borderCoral: 2px coral solid;
+}
+
+* {
+ -webkit-box-sizing: border-box;
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ list-style: none;
+ text-decoration: none;
+ color: black;
+ font-size: 100%;
+ line-height: 1.9rem;
+}
+
+body {
+ height: 10000px;
+}
+
+/* ______________________________ 
+ NAV BAR SECTION 
+_________________________________ */
+
+#containerNavBar {
+ /* border: var(--borderBlueViolet); */
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: flex-end;
+ /* align-items: stretch; */
+ height: 50px;
+ background-color: #BE3144;
+ position:fixed;
+ top: 0;
+ width: 100%;
+}
+
+.navLinks {
+ /* border: var(--borderCyan); */
+ width: 120px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: white;
+}
+
+.navLinks:hover {
+ background-color: #303841;
+}
+
+/* ______________________________ 
+ PERSONAL PRESENTATION
+_________________________________ */
+
+#containerOfHeader{
+ /* border:var(--borderBlueViolet); */
+ margin-top: 50px;
+}
+/* ______________________________ 
+ CONTAINER OF BRIEF CASE
+_________________________________ */
+
+/* ______________________________ 
+ CONTAINER OF TITLE OF BRIEFCASE
+_________________________________ */
+
+/* ______________________________ 
+ CONTAINER OF ALL INDIVIDUALS BRIEFCASES
+_________________________________ */
+
+/* ______________________________ 
+ CONTAINER OF EVERY SINGULAR BRIFCASE
+_________________________________ */
+
+/* ______________________________ 
+ BUTTON SHOW ALL
+_________________________________ */
+
+/* ______________________________ 
+ FOOTER
+_________________________________ */
