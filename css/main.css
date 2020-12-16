@@ -10,6 +10,16 @@ ________________________________ */
  --borderDarkBlue: 2px darkblue solid;
  --borderBlueViolet: 2px blueviolet solid;
  --borderCoral: 2px coral solid;
+ --colorBaseOne25: #0C1114;
+ --colorBaseTwo25: #060606;
+ --colorBaseThree13: #0B1D27;
+ --colorBaseFour13: #072D3D;
+ --colorBaseFive5: #322520;
+ --colorBaseSix5: #05455A;
+ --colorBaseSeven5: #504741;
+ --colorBaseEight5: #09647F;
+ --colorBaseNine5: #72736D;
+ --colorBaseTeen5: #A3B4B1;
 }
 
 * {
@@ -22,10 +32,23 @@ ________________________________ */
  color: black;
  font-size: 100%;
  line-height: 1.9rem;
+ font-family: 'Quicksand', sans-serif;
 }
 
 body {
- height: 10000px;
+ background-color: #072D3D;
+}
+
+h1 {
+ font-size: 5rem;
+}
+
+h2 {
+ font-size: 3.8rem;
+}
+
+p {
+ font-size: 2.3rem;
 }
 
 /* ______________________________ 
@@ -37,10 +60,10 @@ _________________________________ */
  display: flex;
  flex-flow: row wrap;
  justify-content: flex-end;
- /* align-items: stretch; */
- height: 50px;
- background-color: #BE3144;
- position:fixed;
+ height: 65px;
+ background-color: var(--colorBaseSix5);
+ background: var(--colorBaseFour13);
+ position: fixed;
  top: 0;
  width: 100%;
 }
@@ -55,17 +78,45 @@ _________________________________ */
 }
 
 .navLinks:hover {
- background-color: #303841;
+ background-color: #A3B4B1;
+ color: black;
+ border-radius: 6px;
 }
 
 /* ______________________________ 
  PERSONAL PRESENTATION
 _________________________________ */
 
-#containerOfHeader{
- /* border:var(--borderBlueViolet); */
- margin-top: 50px;
+#containerOfHeader {
+ /* border: var(--borderBlueViolet); */
+ margin-top: 65px;
+ display: flex;
+ flex-flow: column wrap;
+ justify-content: flex-start;
+ align-items: center;
+ background-color: var(--colorBaseOne25);
+ min-height: 100vh;
+ background-image: url("https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg?cs=srgb&dl=pexels-sanaan-mazhar-3075993.jpg&fm=jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
 }
+
+#titleOfHeader {
+ color: white;
+ margin-top: 150px;
+ font-size: 9vw;
+}
+
+.paragraphOfHeader {
+ color: white;
+ font-size: 3vw;
+}
+
+.paragraphOfHeader:last-child {
+ margin-top: 1vw;
+}
+
 /* ______________________________ 
  CONTAINER OF BRIEF CASE
 _________________________________ */
