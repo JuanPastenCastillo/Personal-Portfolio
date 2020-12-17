@@ -156,6 +156,7 @@ _________________________________ */
  padding: 10vh 0 6vh 0;
  border-bottom: 10px solid white;
  border-radius: 20px;
+ /* height:100%; */
  /* width:90%;
  margin:auto; */
 }
@@ -246,8 +247,43 @@ _________________________________ */
  /* border: var(--borderCyan); */
  height: 100vh;
  background-color: var(--colorBaseEight5);
+ display: flex;
+ flex-flow: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
 }
 
 #letsWorkTogheter {
- padding: 10vh 0 6vh 0;
+ /* border: var(--borderCyan); */
+ padding: 10vh 0 10vh 0;
+ font-size: 10vw
+}
+
+#paragraphOfTitleFooter {
+ /* border: var(--borderForestGreen); */
+ font-size: 7vw;
+ padding: 3vw 0 3vw 0;
+ margin-top: 10vh;
+}
+
+#containerOfSocialNetworks {
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: center;
+ align-items: center;
+ margin-top: 2vh;
+}
+
+.socialNetwork {
+ /* border: var(--borderCrimson); */
+ margin: 2vw 2vw;
+ font-size: 4vw;
+ border-bottom: 4px var(--colorBaseFour13) solid;
+ border-radius: 6px;
+}
+
+.socialNetwork:hover {
+ color: var(--colorBaseFive5);
+ background-color:var(--colorBaseTeen5);
 }
