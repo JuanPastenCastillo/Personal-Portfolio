@@ -29,7 +29,7 @@ ________________________________ */
  padding: 0;
  list-style: none;
  text-decoration: none;
- color: black;
+ color: white;
  font-size: 100%;
  line-height: 1.9rem;
  font-family: 'Quicksand', sans-serif;
@@ -40,15 +40,19 @@ body {
 }
 
 h1 {
- font-size: 5rem;
+ font-size: 9vw;
 }
 
 h2 {
- font-size: 3.8rem;
+ font-size: 6vw;
+}
+
+h3 {
+ font-size: 5vw;
 }
 
 p {
- font-size: 2.3rem;
+ font-size: 4vw;
 }
 
 /* ______________________________ 
@@ -115,8 +119,8 @@ _________________________________ */
  /* border:var(--borderCyan); */
  color: white;
  font-size: 4vw;
- display:flex;
- align-items:flex-end;
+ display: flex;
+ align-items: flex-end;
 }
 
 .paragraphOfHeader:last-child {
@@ -124,20 +128,107 @@ _________________________________ */
 }
 
 /* ______________________________ 
- CONTAINER OF BRIEF CASE
+ CONTAINER OF BRIEFCASE
 _________________________________ */
+
+#containerOfBriefcase {
+ /* border: var(--borderCyan); */
+ height: 100%;
+ background-color: var(--colorBaseSix5);
+ /* margin-top: 0; */
+}
 
 /* ______________________________ 
  CONTAINER OF TITLE OF BRIEFCASE
 _________________________________ */
 
+#containerOfTitleBriefcase {
+ /* border: var(--borderCoral); */
+ /* margin-top: 8vh; */
+ height: 100%;
+}
+
+#titleOfBriefCase {
+ /* border: var(--borderForestGreen); */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 10vh 0 6vh 0;
+ border-bottom: 10px solid white;
+ border-radius: 20px;
+ /* width:90%;
+ margin:auto; */
+}
+
 /* ______________________________ 
  CONTAINER OF ALL INDIVIDUALS BRIEFCASES
 _________________________________ */
 
+#containerOfAllIndividualsBriefcases {
+ /* border: var(--borderForestGreen); */
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: center;
+ margin-top: 5vw;
+ height: 100%;
+}
+
 /* ______________________________ 
  CONTAINER OF EVERY SINGULAR BRIFCASE
 _________________________________ */
+
+.containerOfEverySingularBriefcase {
+ /* border: var(--borderCoral); */
+ width: 50%;
+ height: 100%;
+ padding: 30px 15px 15px 15px;
+}
+
+.internalContainer {
+ /* border: var(--borderCyan); */
+ /* height: 100%; */
+ margin-right: auto;
+ margin-left: auto;
+ width: 100%;
+ height: 80%;
+}
+
+.containerOfImgBriefcase {
+ /* border: var(--borderForestGreen); */
+ /* width:100%; */
+ /* height:200px; */
+}
+
+.imgBriefcase {
+ width: 100%;
+ height: 40vw;
+ margin-left: auto;
+ margin-right: auto;
+ border-top-left-radius: 6px;
+ border-top-right-radius: 6px;
+ border: white 1px solid;
+ border-bottom: 0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.paragraphOfBriefcase {
+ border: white 1px solid;
+ border-top: 0;
+ border-bottom-right-radius: 6px;
+ border-bottom-left-radius: 6px;
+ background-color: var(--colorBaseThree13);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ height: 10vw;
+ margin: auto;
+ /* padding:2vh; */
+ font-size: 3vw;
+ line-height: 20px;
+}
 
 /* ______________________________ 
  BUTTON SHOW ALL
@@ -146,3 +237,13 @@ _________________________________ */
 /* ______________________________ 
  FOOTER
 _________________________________ */
+
+#containerOfFooter {
+ /* border: var(--borderCyan); */
+ height: 100vh;
+ background-color: var(--colorBaseEight5);
+}
+
+#letsWorkTogheter {
+ padding: 10vh 0 6vh 0;
+}
