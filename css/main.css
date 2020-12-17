@@ -191,6 +191,8 @@ _________________________________ */
  margin-left: auto;
  width: 100%;
  height: 80%;
+ box-shadow: 1px 1px 11px 3px #080D10;
+ border-radius: 6px;
 }
 
 .containerOfImgBriefcase {
@@ -200,21 +202,23 @@ _________________________________ */
 }
 
 .imgBriefcase {
+ /* border: white 1px solid; */
+ border: none;
+ border-top-left-radius: 6px;
+ border-top-right-radius: 6px;
+ border-bottom: 0;
  width: 100%;
  height: 40vw;
  margin-left: auto;
  margin-right: auto;
- border-top-left-radius: 6px;
- border-top-right-radius: 6px;
- border: white 1px solid;
- border-bottom: 0;
  display: flex;
  justify-content: center;
  align-items: center;
 }
 
 .paragraphOfBriefcase {
- border: white 1px solid;
+ /* border: white 1px solid; */
+ border: none;
  border-top: 0;
  border-bottom-right-radius: 6px;
  border-bottom-left-radius: 6px;
