@@ -95,7 +95,7 @@ _________________________________ */
  justify-content: flex-start;
  align-items: center;
  background-color: var(--colorBaseOne25);
- min-height: 100vh;
+ height: 100vh;
  background-image: url("https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg?cs=srgb&dl=pexels-sanaan-mazhar-3075993.jpg&fm=jpg");
  background-position: center;
  background-repeat: no-repeat;
@@ -106,6 +106,7 @@ _________________________________ */
  color: white;
  margin-top: 150px;
  font-size: 9vw;
+ padding-top: 150px;
 }
 
 .paragraphOfHeader {
