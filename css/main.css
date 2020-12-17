@@ -100,22 +100,27 @@ _________________________________ */
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
+ /* position: relative; */
 }
 
 #titleOfHeader {
+ /* border:var(--borderCoral); */
  color: white;
- margin-top: 150px;
  font-size: 9vw;
- padding-top: 150px;
+ padding-top: 130px;
+ margin-top: 0;
 }
 
 .paragraphOfHeader {
+ /* border:var(--borderCyan); */
  color: white;
- font-size: 3vw;
+ font-size: 4vw;
+ display:flex;
+ align-items:flex-end;
 }
 
 .paragraphOfHeader:last-child {
- margin-top: 1vw;
+ margin-top: 2vw;
 }
 
 /* ______________________________ 
