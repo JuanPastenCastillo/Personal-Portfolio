@@ -279,11 +279,13 @@ _________________________________ */
  /* border: var(--borderCrimson); */
  margin: 2vw 2vw;
  font-size: 4vw;
- border-bottom: 4px var(--colorBaseFour13) solid;
- border-radius: 6px;
+ padding: 4vw;
 }
 
 .socialNetwork:hover {
  color: var(--colorBaseFive5);
- background-color:var(--colorBaseTeen5);
+ background-color: var(--colorBaseTeen5);
+ padding: auto;
+ text-decoration: underline;
+ border-radius: 6px;
 }
