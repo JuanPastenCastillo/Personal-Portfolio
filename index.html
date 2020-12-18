@@ -5,6 +5,7 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="./css/normalizeCompress.css">
+ <script src="https://kit.fontawesome.com/bb456b4ec7.js" crossorigin="anonymous"></script>
  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
  <link rel="stylesheet" href="./css/main.css">
  <title>Personal portfolio</title>
@@ -16,9 +17,20 @@
  NAV BAR SECTION 
 _________________________________ -->
  <nav id="containerNavBar">
-  <a href="#titleOfHeader" class="navLinks" id="aboutNavBar">About</a>
+  <div class="containerOfEveryNavBar">
+   <span id="iconOfNavBarAbout" class="front fas fa-home"></span>
+   <a href="#titleOfHeader" class="navLinks" id="aboutNavBar">About</a>
+  </div>
+  
+  <div class="containerOfEveryNavBar">
+   <span id="iconOfNavBarWork" class="front fas fa-briefcase"></span>
   <a href="#titleOfBriefCase" class="navLinks" id="workNavBar">Work</a>
+  </div>
+  
+  <div class="containerOfEveryNavBar">
+   <span id="iconOfNavBarContact" class="front fas fa-handshake"></span>
   <a href="#letsWorkTogheter" class="navLinks" id="contactNavLinks">Contact</a>
+  </div>
  </nav>
 
  <!-- ______________________________ 
@@ -100,7 +112,7 @@ _________________________________ -->
  <div id="containerOfFooter">
   <footer>
    <h3 id="letsWorkTogheter">Let's work togheter!</h3>
-   <p id="paragraphOfTitleFooter">Here's my social networks</p>
+   <p id="paragraphOfTitleFooter">Here's my social networks:</p>
    <div id="containerOfSocialNetworks">
     <a href="https://www.linkedin.com/in/juan-past%C3%A9n-castillo-078b5817a/" target="_blank" class="socialNetwork" id="linkedinFooter">Linkedin</a>
     <a href="https://twitter.com/JuanPastn2" target="_blank" class="socialNetwork" id="twitterFooter">Twitter</a>
