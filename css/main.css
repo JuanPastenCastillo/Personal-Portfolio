@@ -33,6 +33,7 @@ ________________________________ */
  font-size: 100%;
  line-height: 1.9rem;
  font-family: 'Quicksand', sans-serif;
+ text-align: center;
 }
 
 body {
@@ -62,11 +63,11 @@ _________________________________ */
 #containerNavBar {
  /* border: var(--borderBlueViolet); */
  display: flex;
- flex-flow: row wrap;
+ flex-flow: row;
  justify-content: flex-end;
  height: 65px;
- background-color: var(--colorBaseSix5);
- background: var(--colorBaseFour13);
+ /* background-color: rgba(7, 45, 61, 0.9); */
+ background: rgba(7, 45, 61, 0.7);
  position: fixed;
  top: 0;
  width: 100%;
@@ -110,7 +111,7 @@ _________________________________ */
 #titleOfHeader {
  /* border:var(--borderCoral); */
  color: white;
- font-size: 9vw;
+ font-size: 10vw;
  padding-top: 130px;
  margin-top: 0;
 }
@@ -153,8 +154,9 @@ _________________________________ */
  display: flex;
  justify-content: center;
  align-items: center;
- padding: 10vh 0 6vh 0;
- border-bottom: 10px solid white;
+ padding: 13vh 0 0 0;
+ /* border-bottom: 10px solid white; */
+ text-decoration: underline;
  border-radius: 20px;
  /* height:100%; */
  /* width:90%;
@@ -273,6 +275,7 @@ _________________________________ */
  justify-content: center;
  align-items: center;
  margin-top: 2vh;
+ /* height:1vh; */
 }
 
 .socialNetwork {
@@ -288,4 +291,74 @@ _________________________________ */
  padding: auto;
  text-decoration: underline;
  border-radius: 6px;
+}
+
+/* ______________________________ 
+ MEDIA QUERIES
+_________________________________ */
+
+@media only screen and (max-width: 960px) {
+ #letsWorkTogheter {
+  font-size: 12vh;
+  padding: 0 0 6vh 0;
+  line-height: 10vh;
+ }
+}
+
+@media only screen and (max-width: 540px) {
+ #titleOfHeader {
+  font-size: 9.5vh;
+  padding-top: 75px;
+  text-align: center;
+  line-height: 9vh;
+  margin-bottom: 2vh;
+ }
+ .paragraphOfHeader {
+  font-size: 3.1vh;
+ }
+ #titleOfBriefCase {
+  font-size: 6vh;
+  line-height: 6vh;
+ }
+ .containerOfEverySingularBriefcase {
+  width: 100vw;
+ }
+ .imgBriefcase {
+  height: 40vh;
+ }
+ .paragraphOfBriefcase {
+  font-size: 3vh;
+  height: 10vh;
+  /* padding-top: 2vh; */
+  /* padding-bottom: 2vh; */
+ }
+ #paragraphOfTitleFooter {
+  margin: 0;
+  font-size: 6vh;
+ }
+ #containerOfSocialNetworks {
+  flex-flow: column;
+ }
+ .socialNetwork{
+  font-size:4vh;
+ }
+}
+
+@media only screen and (max-width: 380px) {
+ .paragraphOfHeader {
+  background-color: rgba(5, 69, 90, 0.78);
+  border-radius: 6px;
+  width: 212px;
+  display: flex;
+  justify-content: center;
+ }
+ .containerOfEverySingularBriefcase {
+  width: 100vw;
+ }
+ .imgBriefcase {
+  height: 30vh;
+ }
+ #letsWorkTogheter {
+  font-size: 8vh;
+ }
 }
