@@ -36,6 +36,14 @@ ________________________________ */
  text-align: center;
 }
 
+@font-face {
+ font-family: 'neontubes';
+ src: url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.eot");
+ src: url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.eot?#iefix") format("embedded-opentype"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.woff2") format("woff2"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.woff") format("woff"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.ttf") format("truetype");
+ font-weight: normal;
+ font-style: normal;
+}
+
 body {
  background-color: #072D3D;
 }
@@ -239,24 +247,14 @@ _________________________________ */
 .waves::before {
  border-radius: 44%;
  /* border:blue solid 1px; */
- background: radial-gradient(circle,
- rgba(5, 69, 90, 0) 0%,
- rgba(80, 71, 65, 0) 20%,
- rgba(10, 11, 12, 0.2) 85%,
- rgba(7, 45, 61, 0.2) 95%,
- rgba(50, 37, 32, 0.2) 99%);
+ background: radial-gradient(circle, rgba(5, 69, 90, 0) 0%, rgba(80, 71, 65, 0) 20%, rgba(10, 11, 12, 0.2) 85%, rgba(7, 45, 61, 0.2) 95%, rgba(50, 37, 32, 0.2) 99%);
  animation: waves 35s linear infinite;
 }
 
 .waves::after {
  border-radius: 44%;
  /* border:red solid 1px; */
- background: radial-gradient(circle,
- rgba(5, 69, 90, 0.0) 0%,
- rgba(80, 71, 65, 0.0) 20%,
- rgba(9, 100, 127, 0.1) 85%,
- rgba(114, 115, 109, 0.1) 95%,
- rgba(163, 180, 177, 0.1) 99%);
+ background: radial-gradient(circle, rgba(5, 69, 90, 0.0) 0%, rgba(80, 71, 65, 0.0) 20%, rgba(9, 100, 127, 0.1) 85%, rgba(114, 115, 109, 0.1) 95%, rgba(163, 180, 177, 0.1) 99%);
  /* background: rgba(114, 115, 109, 0.0); */
  animation: waves 25s linear infinite;
 }
@@ -278,6 +276,7 @@ _________________________________ */
  /* border: var(--borderCyan); */
  height: 100%;
  background-color: var(--colorBaseSix5);
+ background-image: url('data:image/svg+xml,%3Csvg width="42" height="44" viewBox="0 0 42 44" xmlns="http://www.w3.org/2000/svg"%3E%3Cg id="Page-1" fill="none" fill-rule="evenodd"%3E%3Cg id="brick-wall" fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath d="M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
  /* margin-top: 0; */
 }
 
@@ -287,7 +286,6 @@ _________________________________ */
 
 #containerOfTitleBriefcase {
  /* border: var(--borderCoral); */
- /* margin-top: 8vh; */
  height: 100%;
 }
 
@@ -295,14 +293,32 @@ _________________________________ */
  /* border: var(--borderForestGreen); */
  display: flex;
  justify-content: center;
- align-items: center;
- padding: 13vh 0 0 0;
- /* border-bottom: 10px solid white; */
+ /* align-items: center; */
+ padding: 8.5vh 0 0 0;
  text-decoration: underline;
- border-radius: 20px;
- /* height:100%; */
- /* width:90%;
- margin:auto; */
+ /* border-radius: 20px; */
+ font-family: "neontubes";
+ -webkit-transform: translateZ(0) translate3D(0, 0, 0);
+ transform: translateZ(0) translate3D(0, 0, 0);
+ -webkit-backface-visibility: hidden;
+ backface-visibility: hidden;
+ will-change: opacity;
+ text-shadow: 0 0 0 transparent, 0 0 10px #2695ff, 0 0 20px rgba(38, 149, 255, 0.5), 0 0 40px #2695ff, 0 0 100px #2695ff, 0 0 200px #2695ff, 0 0 300px #2695ff, 0 0 500px #2695ff;
+ -webkit-animation: buzz 0.01s infinite alternate;
+ animation: buzz 1.8s infinite alternate;
+ line-height: 7.9vw;
+}
+
+@-webkit-keyframes buzz {
+ 70% {
+  opacity: 0.80;
+ }
+}
+
+@keyframes buzz {
+ 70% {
+  opacity: 0.80;
+ }
 }
 
 /* ______________________________ 
@@ -460,7 +476,7 @@ _________________________________ */
  }
  #titleOfBriefCase {
   font-size: 6vh;
-  line-height: 6vh;
+  line-height: 7.9vh;
  }
  .containerOfEverySingularBriefcase {
   width: 100vw;
