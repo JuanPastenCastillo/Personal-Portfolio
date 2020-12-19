@@ -12,7 +12,7 @@ ________________________________ */
  --borderCoral: 2px coral solid;
  --colorBaseOne25: #0C1114;
  --colorBaseTwo25: #060606;
- --colorBaseThree13: #0B1D27;
+ --colorBaseThree13: #0a0b0c;
  --colorBaseFour13: #072D3D;
  --colorBaseFive5: #322520;
  --colorBaseSix5: #05455A;
@@ -71,10 +71,14 @@ _________________________________ */
  position: fixed;
  top: 0;
  width: 100%;
+ z-index: 2;
+ /* position: relative; */
  /* display: inline-block; */
 }
 
 .containerOfEveryNavBar {
+ /* border:var(--borderBlueViolet); */
+ z-index: 1;
  position: relative;
  flex-flow: row;
  display: flex;
@@ -87,10 +91,6 @@ _________________________________ */
 .containerOfEveryNavBar:hover .navLinks {
  transform: rotateY(0deg);
 }
-
-/* .containerOfEveryNavBar:hover .front {
- transform: rotateY(90deg);
-} */
 
 .containerOfEveryNavBar:hover #iconOfNavBarAbout {
  transform: rotateX(90deg);
@@ -183,7 +183,8 @@ _________________________________ */
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
- /* position: relative; */
+ position: relative;
+ overflow: hidden;
 }
 
 #titleOfHeader {
@@ -192,6 +193,8 @@ _________________________________ */
  font-size: 10vw;
  padding-top: 130px;
  margin-top: 0;
+ position: relative;
+ z-index: 1;
 }
 
 .paragraphOfHeader {
@@ -199,11 +202,72 @@ _________________________________ */
  color: white;
  font-size: 4vw;
  display: flex;
- align-items: flex-end;
+ justify-content: center;
+ position: relative;
+ z-index: 1;
 }
 
 .paragraphOfHeader:last-child {
  margin-top: 2vw;
+}
+
+.waves {
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ height: 200px;
+ /* background-color: linear-gradient(0deg,
+  rgba(2, 0, 36, 1) 0%,
+  rgba(12, 17, 20, 1) 20%,
+  rgba(6, 6, 6, 1) 40%,
+  rgba(11, 29, 39, 1) 60%,
+  rgba(7, 45, 61, 1) 80%); */
+ transition: 500ms;
+}
+
+.waves::before, .waves::after {
+ content: '';
+ position: absolute;
+ width: 300vw;
+ height: 300vw;
+ top: -65vw;
+ left: 50%;
+ transform: translate(-50%, -75%);
+}
+
+.waves::before {
+ border-radius: 44%;
+ /* border:blue solid 1px; */
+ background: radial-gradient(circle,
+ rgba(5, 69, 90, 0) 0%,
+ rgba(80, 71, 65, 0) 20%,
+ rgba(10, 11, 12, 0.2) 85%,
+ rgba(7, 45, 61, 0.2) 95%,
+ rgba(50, 37, 32, 0.2) 99%);
+ animation: waves 35s linear infinite;
+}
+
+.waves::after {
+ border-radius: 44%;
+ /* border:red solid 1px; */
+ background: radial-gradient(circle,
+ rgba(5, 69, 90, 0.0) 0%,
+ rgba(80, 71, 65, 0.0) 20%,
+ rgba(9, 100, 127, 0.1) 85%,
+ rgba(114, 115, 109, 0.1) 95%,
+ rgba(163, 180, 177, 0.1) 99%);
+ /* background: rgba(114, 115, 109, 0.0); */
+ animation: waves 25s linear infinite;
+}
+
+@keyframes waves {
+ 0% {
+  transform: translate(-50%, -75%) rotate(0deg);
+ }
+ 100% {
+  transform: translate(-50%, -75%) rotate(360deg);
+ }
 }
 
 /* ______________________________ 
@@ -375,6 +439,9 @@ _________________________________ */
   padding: 0 0 6vh 0;
   line-height: 10vh;
  }
+ .waves {
+  height: 150px;
+ }
 }
 
 @media only screen and (max-width: 540px) {
@@ -387,6 +454,9 @@ _________________________________ */
  }
  .paragraphOfHeader {
   font-size: 3.1vh;
+ }
+ .waves {
+  height: 50px;
  }
  #titleOfBriefCase {
   font-size: 6vh;
@@ -421,6 +491,7 @@ _________________________________ */
   background-color: rgba(5, 69, 90, 0.78);
   border-radius: 6px;
   width: 212px;
+  margin: auto;
   display: flex;
   justify-content: center;
  }
