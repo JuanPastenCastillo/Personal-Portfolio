@@ -380,7 +380,8 @@ _________________________________ */
 .internalContainer:hover .imgBriefcase {
  transform: scale(0.9, 0.9);
  box-shadow: 1px 1px 31px 3px rgba(38, 149, 255, 0.5);
- animation: 4.5s cubic-bezier(.79, -0.89, 0, 8.03) 0.8s forwards;
+ animation: cubic-bezier(.79, -0.89, 0, 8.03) 0.8s forwards;
+ animation-duration: 4.5s, 15s;
  animation-name: borderRadius, boxShadow;
  animation-iteration-count: 1, infinite;
  animation-direction: normal, alternate;
