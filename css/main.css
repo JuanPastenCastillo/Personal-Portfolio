@@ -20,6 +20,7 @@ ________________________________ */
  --colorBaseEight5: #09647F;
  --colorBaseNine5: #72736D;
  --colorBaseTeen5: #A3B4B1;
+ --borderStart: 10%;
 }
 
 * {
@@ -278,6 +279,7 @@ _________________________________ */
  background-color: var(--colorBaseSix5);
  background-image: url('data:image/svg+xml,%3Csvg width="42" height="44" viewBox="0 0 42 44" xmlns="http://www.w3.org/2000/svg"%3E%3Cg id="Page-1" fill="none" fill-rule="evenodd"%3E%3Cg id="brick-wall" fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath d="M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
  /* margin-top: 0; */
+ overflow: hidden;
 }
 
 /* ______________________________ 
@@ -347,13 +349,16 @@ _________________________________ */
 
 .internalContainer {
  /* border: var(--borderCyan); */
- /* height: 100%; */
  margin-right: auto;
  margin-left: auto;
  width: 100%;
  height: 80%;
  box-shadow: 1px 1px 11px 3px #080D10;
  border-radius: 6px;
+}
+
+.internalContainer:hover {
+ box-shadow: inset 1px 1px 11px 3px white;
 }
 
 .imgBriefcase {
@@ -369,6 +374,70 @@ _________________________________ */
  display: flex;
  justify-content: center;
  align-items: center;
+ transition: transform 5.0s cubic-bezier(.79, -0.89, .21, 2.03) 0.2s;
+}
+
+.internalContainer:hover .imgBriefcase {
+ transform: scale(0.9, 0.9);
+ box-shadow: 1px 1px 31px 3px rgba(38, 149, 255, 0.5);
+ animation: 4.5s cubic-bezier(.79, -0.89, 0, 8.03) 0.8s forwards;
+ animation-name: borderRadius, boxShadow;
+ animation-iteration-count: 1, infinite;
+ animation-direction: normal, alternate;
+}
+
+@keyframes borderRadius {
+ 0% {
+  border-radius: 6px;
+ }
+ 20% {
+  border-top-right-radius: 10%;
+ }
+ 40% {
+  border-bottom-left-radius: 20%;
+ }
+ 50% {
+  border-bottom-right-radius: 30%;
+ }
+ 60% {
+  border-top-left-radius: 40%;
+ }
+ 70% {
+  border-bottom-right-radius: 50%;
+ }
+ 80% {
+  border-radius: 50%;
+ }
+ 100% {
+  border-radius: 6px;
+ }
+}
+
+@keyframes boxShadow {
+ 0% {
+  box-shadow: 1px 1px 31px 10px rgba(38, 149, 255, 0.2);
+ }
+ 20% {
+  box-shadow: 1px 1px 31px 5px rgba(38, 149, 255, 0.8);
+ }
+ 40% {
+  box-shadow: 1px 1px 31px 5px rgba(38, 149, 255, 0.5);
+ }
+ 50% {
+  box-shadow: 1px 1px 31px 5px rgba(38, 149, 255, 0.8);
+ }
+ 60% {
+  box-shadow: 1px 1px 31px 5px rgba(38, 149, 255, 0.4);
+ }
+ 70% {
+  box-shadow: 1px 1px 31px 5px rgba(38, 149, 255, 0.2);
+ }
+ 80% {
+  box-shadow: 1px 1px 31px 5px rgba(38, 149, 255, 0.8);
+ }
+ 100% {
+  box-shadow: 1px 1px 31px 5px rgba(38, 149, 255, 0.8);
+ }
 }
 
 .paragraphOfBriefcase {
