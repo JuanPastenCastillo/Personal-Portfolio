@@ -20,7 +20,6 @@ ________________________________ */
  --colorBaseEight5: #09647F;
  --colorBaseNine5: #72736D;
  --colorBaseTeen5: #A3B4B1;
- --borderStart: 10%;
 }
 
 * {
@@ -74,7 +73,7 @@ _________________________________ */
  display: flex;
  flex-flow: row;
  justify-content: flex-end;
- height: 1vh;
+ height: 8vh;
  /* background-color: rgba(7, 45, 61, 0.9); */
  /* background: rgba(7, 45, 61, 0.7); */
  position: fixed;
@@ -119,7 +118,7 @@ _________________________________ */
  justify-content: center;
  /* height: auto; */
  width: 100%;
- height: 6vh;
+ height:4vh;
  margin: auto;
  position: absolute;
  top: 0;
@@ -130,7 +129,8 @@ _________________________________ */
 
 .front {
  background-color: #072D3D;
- color: white;
+ /* background-color: #f05629; */
+ color: #f05629;
  transform-origin: 0 0;
 }
 
@@ -198,6 +198,7 @@ _________________________________ */
 
 #titleOfHeader {
  /* border:var(--borderCoral); */
+ animation: movingTwitterIcon 1.5s forwards;
  color: white;
  font-size: 10vw;
  padding-top: 130px;
@@ -208,11 +209,13 @@ _________________________________ */
 
 .paragraphOfHeader {
  /* border:var(--borderCyan); */
+ animation: movingTwitterIcon 2.0s forwards;
  color: white;
  font-size: 4vw;
  display: flex;
  justify-content: center;
  position: relative;
+ line-height: 8vh;
  z-index: 1;
 }
 
@@ -243,21 +246,23 @@ _________________________________ */
  top: -65vw;
  left: 50%;
  transform: translate(-50%, -75%);
+ /* -webkit-filter: blur(10px);
+ filter: blur(10px); */
 }
 
 .waves::before {
  border-radius: 44%;
  /* border:blue solid 1px; */
- background: radial-gradient(circle, rgba(5, 69, 90, 0) 0%, rgba(80, 71, 65, 0) 20%, rgba(10, 11, 12, 0.2) 85%, rgba(7, 45, 61, 0.2) 95%, rgba(50, 37, 32, 0.2) 99%);
- animation: waves 35s linear infinite;
+ background: radial-gradient(circle, rgba(5, 69, 90, 0) 0%, rgba(80, 71, 65, 0) 20%, rgba(162, 45, 11, 0.1) 97%, rgba(143, 40, 10, 0.1) 98%, rgba(124, 35, 9, 0.1) 99%);
+ animation: waves 16s linear infinite;
 }
 
 .waves::after {
  border-radius: 44%;
  /* border:red solid 1px; */
- background: radial-gradient(circle, rgba(5, 69, 90, 0.0) 0%, rgba(80, 71, 65, 0.0) 20%, rgba(9, 100, 127, 0.1) 85%, rgba(114, 115, 109, 0.1) 95%, rgba(163, 180, 177, 0.1) 99%);
+ background: radial-gradient(circle, rgba(5, 69, 90, 0) 0%, rgba(80, 71, 65, 0.0) 20%, rgba(162, 45, 11, 0.1) 97%, rgba(143, 40, 10, 0.1) 98%, rgba(124, 35, 9, 0.1) 99%);
  /* background: rgba(114, 115, 109, 0.0); */
- animation: waves 25s linear infinite;
+ animation: waves 14s linear infinite;
 }
 
 @keyframes waves {
@@ -616,6 +621,8 @@ _________________________________ */
  align-items: center;
  text-align: center;
  overflow: hidden;
+ box-shadow: inset 1px 1px 15px 1px black;
+ border-radius: 6px;
 }
 
 #letsWorkTogheter {
@@ -754,13 +761,16 @@ _________________________________ */
 _________________________________ */
 
 @media only screen and (max-width: 960px) {
+ .paragraphOfHeader {
+  line-height: 1.9rem;
+ }
+ .waves {
+  height: 150px;
+ }
  #letsWorkTogheter {
   font-size: 12vh;
   padding: 0 0 6vh 0;
   line-height: 10vh;
- }
- .waves {
-  height: 150px;
  }
 }
 
