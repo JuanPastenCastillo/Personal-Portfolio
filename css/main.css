@@ -1,14 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
-/* ________________________________
-BASE
-________________________________ */
-
 :root {
  --borderCrimson: 2px crimson solid;
  --borderBlack: 2px black solid;
@@ -26,11 +15,12 @@ ________________________________ */
  --colorBaseSeven5: #504741;
  --colorBaseEight5: #09647F;
  --colorBaseNine5: #72736D;
- --colorBaseTeen5: #A3B4B1;
+ --colorBaseTeen5: #A3B4B1
 }
 
 html {
  scroll-behavior: smooth;
+ /* border-top-right-radius:; */
 }
 
 * {
@@ -44,43 +34,38 @@ html {
  font-size: 100%;
  line-height: 1.9rem;
  font-family: 'Quicksand', sans-serif;
- text-align: center;
+ text-align: center
 }
 
 @font-face {
  font-family: 'neontubes';
- src: url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.eot");
+ /* src: url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.eot"); */
  src: url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.eot?#iefix") format("embedded-opentype"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.woff2") format("woff2"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.woff") format("woff"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.ttf") format("truetype");
  font-weight: normal;
- font-style: normal;
+ font-style: normal
 }
 
 body {
- background-color: #072D3D;
+ background-color: #072D3D
 }
 
 h1 {
- font-size: 9vw;
+ font-size: 9vw
 }
 
 h2 {
- font-size: 6vw;
+ font-size: 6vw
 }
 
 h3 {
- font-size: 5vw;
+ font-size: 5vw
 }
 
 p {
- font-size: 4vw;
+ font-size: 4vw
 }
 
-/* ______________________________ 
- NAV BAR SECTION 
-_________________________________ */
-
 #containerNavBar {
- /* border: var(--borderBlueViolet); */
  display: -webkit-box;
  display: -ms-flexbox;
  display: flex;
@@ -92,18 +77,13 @@ _________________________________ */
  -ms-flex-pack: end;
  justify-content: flex-end;
  height: 8vh;
- /* background-color: rgba(7, 45, 61, 0.9); */
- /* background: rgba(7, 45, 61, 0.7); */
  position: fixed;
  top: 0;
  width: 100%;
- z-index: 2;
- /* position: relative; */
- /* display: inline-block; */
+ z-index: 2
 }
 
 .containerOfEveryNavBar {
- /* border:var(--borderBlueViolet); */
  z-index: 1;
  position: relative;
  -webkit-box-orient: horizontal;
@@ -119,28 +99,27 @@ _________________________________ */
  -webkit-box-align: center;
  -ms-flex-align: center;
  align-items: center;
- /* height: 100%; */
- width: 100px;
+ width: 100px
 }
 
 .containerOfEveryNavBar:hover .navLinks {
  -webkit-transform: rotateY(0deg);
- transform: rotateY(0deg);
+ transform: rotateY(0deg)
 }
 
 .containerOfEveryNavBar:hover #iconOfNavBarAbout {
  -webkit-transform: rotateX(90deg);
- transform: rotateX(90deg);
+ transform: rotateX(90deg)
 }
 
 .containerOfEveryNavBar:hover #iconOfNavBarWork {
  -webkit-transform: rotateX(90deg);
- transform: rotateX(90deg);
+ transform: rotateX(90deg)
 }
 
 .containerOfEveryNavBar:hover #iconOfNavBarContact {
  -webkit-transform: rotateX(90deg);
- transform: rotateX(90deg);
+ transform: rotateX(90deg)
 }
 
 .front, .navLinks {
@@ -153,7 +132,6 @@ _________________________________ */
  -webkit-box-pack: center;
  -ms-flex-pack: center;
  justify-content: center;
- /* height: auto; */
  width: 100%;
  height: 4vh;
  margin: auto;
@@ -163,20 +141,18 @@ _________________________________ */
  -webkit-transition: all .4s ease;
  -o-transition: all .4s ease;
  transition: all .4s ease;
- cursor: pointer;
+ cursor: pointer
 }
 
 .front {
  background-color: #072D3D;
- /* background-color: #f05629; */
  color: #f05629;
  -webkit-transform-origin: 0 0;
  -ms-transform-origin: 0 0;
- transform-origin: 0 0;
+ transform-origin: 0 0
 }
 
 .navLinks {
- /* border: var(--borderCyan); */
  width: 100%;
  display: -webkit-box;
  display: -ms-flexbox;
@@ -193,45 +169,35 @@ _________________________________ */
  transform-origin: 0 0 85px;
  -webkit-transform: rotate(-90deg);
  -ms-transform: rotate(-90deg);
- transform: rotate(-90deg);
+ transform: rotate(-90deg)
 }
-
-/* #contactNavLinks {
- transform-origin: 0 0 85px;
- transform: rotateY(-90deg);
-} */
 
 .navLinks:hover {
  background-color: #A3B4B1;
- color: black;
+ color: black
 }
 
 #iconOfNavBarAbout {
  border-bottom-left-radius: 50%;
- border-top-left-radius: 50%;
+ border-top-left-radius: 50%
 }
 
 #aboutNavBar {
  border-bottom-left-radius: 50%;
- border-top-left-radius: 50%;
+ border-top-left-radius: 50%
 }
 
 #iconOfNavBarContact {
  border-bottom-right-radius: 50%;
- border-top-right-radius: 50%;
+ border-top-right-radius: 50%
 }
 
 #contactNavLinks {
  border-bottom-right-radius: 50%;
- border-top-right-radius: 50%;
+ border-top-right-radius: 50%
 }
 
-/* ______________________________ 
- PERSONAL PRESENTATION
-_________________________________ */
-
 #containerOfHeader {
- /* border: var(--borderBlueViolet); */
  margin-top: 65px;
  display: -webkit-box;
  display: -ms-flexbox;
@@ -243,18 +209,16 @@ _________________________________ */
  -webkit-box-pack: start;
  -ms-flex-pack: start;
  justify-content: flex-start;
- /* background-color: var(--colorBaseOne25); */
  height: 100vh;
- background-image: url("https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg?cs=srgb&dl=pexels-sanaan-mazhar-3075993.jpg&fm=jpg");
+ background-image: url(../images/backgroundImageCityNight.jpg);
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
  position: relative;
- overflow: hidden;
+ overflow: hidden
 }
 
 #JuanPastenCastillo {
- /* border:var(--borderCoral); */
  -webkit-animation: showingTheText 1.8s forwards;
  animation: showingTheText 1.8s forwards;
  color: white;
@@ -262,32 +226,31 @@ _________________________________ */
  padding-top: 130px;
  margin-top: 0;
  opacity: 0;
- /* height:20vh; */
- /* line-height: 15rem; */
  position: relative;
- z-index: 1;
+ z-index: 1
 }
 
 @-webkit-keyframes showingTheText {
  0% {
-  opacity: 0;
+  opacity: 0
  }
+
  100% {
-  opacity: 1;
+  opacity: 1
  }
 }
 
 @keyframes showingTheText {
  0% {
-  opacity: 0;
+  opacity: 0
  }
+
  100% {
-  opacity: 1;
+  opacity: 1
  }
 }
 
 .paragraphOfHeader {
- /* border:var(--borderCyan); */
  -webkit-animation: showingTheText 2.3s forwards 1s;
  animation: showingTheText 2.3s forwards 1s;
  color: white;
@@ -301,34 +264,28 @@ _________________________________ */
  position: relative;
  line-height: 8vh;
  opacity: 0;
- z-index: 1;
+ z-index: 1
 }
 
 .paragraphOfHeader:last-child {
  margin-top: 2vw;
  opacity: 0;
  -webkit-animation: showingTheText 2.8s forwards 1.5s;
- animation: showingTheText 2.8s forwards 1.5s;
+ animation: showingTheText 2.8s forwards 1.5s
 }
 
-.waves {
+/* .waves {
  position: absolute;
  bottom: 0;
  left: 0;
  right: 0;
  height: 200px;
- /* background-color: linear-gradient(0deg,
-  rgba(2, 0, 36, 1) 0%,
-  rgba(12, 17, 20, 1) 20%,
-  rgba(6, 6, 6, 1) 40%,
-  rgba(11, 29, 39, 1) 60%,
-  rgba(7, 45, 61, 1) 80%); */
  -webkit-transition: 500ms;
  -o-transition: 500ms;
- transition: 500ms;
-}
+ transition: 500ms
+} */
 
-.waves::before, .waves::after {
+/* .waves::before, .waves::after {
  content: '';
  position: absolute;
  width: 300vw;
@@ -337,114 +294,87 @@ _________________________________ */
  left: 50%;
  -webkit-transform: translate(-50%, -75%);
  -ms-transform: translate(-50%, -75%);
- transform: translate(-50%, -75%);
-}
+ transform: translate(-50%, -75%)
+} */
 
-.waves::before {
+/* .waves::before {
  border-radius: 44%;
- /* border:blue solid 1px; */
  background: -o-radial-gradient(circle, rgba(5, 69, 90, 0) 0%, rgba(80, 71, 65, 0) 20%, rgba(162, 45, 11, 0.1) 97%, rgba(143, 40, 10, 0.1) 98%, rgba(124, 35, 9, 0.1) 99%);
  background: radial-gradient(circle, rgba(5, 69, 90, 0) 0%, rgba(80, 71, 65, 0) 20%, rgba(162, 45, 11, 0.1) 97%, rgba(143, 40, 10, 0.1) 98%, rgba(124, 35, 9, 0.1) 99%);
  -webkit-animation: waves 16s linear infinite;
- animation: waves 16s linear infinite;
-}
-
+ animation: waves 16s linear infinite
+} */
+/* 
 .waves::after {
  border-radius: 44%;
- /* border:red solid 1px; */
  background: -o-radial-gradient(circle, rgba(5, 69, 90, 0) 0%, rgba(80, 71, 65, 0.0) 20%, rgba(162, 45, 11, 0.1) 97%, rgba(143, 40, 10, 0.1) 98%, rgba(124, 35, 9, 0.1) 99%);
  background: radial-gradient(circle, rgba(5, 69, 90, 0) 0%, rgba(80, 71, 65, 0.0) 20%, rgba(162, 45, 11, 0.1) 97%, rgba(143, 40, 10, 0.1) 98%, rgba(124, 35, 9, 0.1) 99%);
- /* background: rgba(114, 115, 109, 0.0); */
  -webkit-animation: waves 14s linear infinite;
- animation: waves 14s linear infinite;
-}
+ animation: waves 14s linear infinite
+} */
 
-@-webkit-keyframes waves {
+/* @-webkit-keyframes waves {
  0% {
   -webkit-transform: translate(-50%, -75%) rotate(0deg);
-  transform: translate(-50%, -75%) rotate(0deg);
+  transform: translate(-50%, -75%) rotate(0deg)
  }
  100% {
   -webkit-transform: translate(-50%, -75%) rotate(360deg);
-  transform: translate(-50%, -75%) rotate(360deg);
+  transform: translate(-50%, -75%) rotate(360deg)
  }
 }
 
 @keyframes waves {
  0% {
   -webkit-transform: translate(-50%, -75%) rotate(0deg);
-  transform: translate(-50%, -75%) rotate(0deg);
+  transform: translate(-50%, -75%) rotate(0deg)
  }
  100% {
   -webkit-transform: translate(-50%, -75%) rotate(360deg);
-  transform: translate(-50%, -75%) rotate(360deg);
+  transform: translate(-50%, -75%) rotate(360deg)
  }
-}
-
-/* ______________________________ 
- CONTAINER OF BRIEFCASE
-_________________________________ */
+} */
 
 #containerOfBriefcase {
- /* border: var(--borderCyan); */
  height: 100%;
- background-color: var(--colorBaseSix5);
+ /* background-color: var(--colorBaseSix5); */
  background-image: url('data:image/svg+xml,%3Csvg width="42" height="44" viewBox="0 0 42 44" xmlns="http://www.w3.org/2000/svg"%3E%3Cg id="Page-1" fill="none" fill-rule="evenodd"%3E%3Cg id="brick-wall" fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath d="M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
- /* margin-top: 0; */
- overflow: hidden;
+ overflow: hidden
 }
 
-/* ______________________________ 
- CONTAINER OF TITLE OF BRIEFCASE
-_________________________________ */
-
 #containerOfTitleBriefcase {
- /* border: var(--borderCoral); */
- height: 100%;
+ height: 100%
 }
 
 #myWorks {
- /* border: var(--borderForestGreen); */
  display: -webkit-box;
  display: -ms-flexbox;
  display: flex;
  -webkit-box-pack: center;
  -ms-flex-pack: center;
  justify-content: center;
- /* align-items: center; */
  padding: 8.5vh 0 0 0;
  text-decoration: underline;
- /* border-radius: 20px; */
  font-family: "neontubes";
- -webkit-transform: translateZ(0) translate3D(0, 0, 0);
- transform: translateZ(0) translate3D(0, 0, 0);
- -webkit-backface-visibility: hidden;
- backface-visibility: hidden;
- will-change: opacity;
  text-shadow: 0 0 0 transparent, 0 0 10px #2695ff, 0 0 20px rgba(38, 149, 255, 0.5), 0 0 40px #2695ff, 0 0 100px #2695ff, 0 0 200px #2695ff, 0 0 300px #2695ff, 0 0 500px #2695ff;
- -webkit-animation: buzz 0.01s infinite alternate;
- animation: buzz 1.8s infinite alternate;
- line-height: 7.9vw;
+ /* -webkit-animation: buzz 0.01s infinite alternate;
+ animation: buzz 1.8s infinite alternate; */
+ line-height: 7.9vw
 }
 
-@-webkit-keyframes buzz {
+/* @-webkit-keyframes buzz {
  70% {
-  opacity: 0.80;
+  opacity: 0.80
  }
 }
 
 @keyframes buzz {
  70% {
-  opacity: 0.80;
+  opacity: 0.80
  }
-}
-
-/* ______________________________ 
- CONTAINER OF ALL INDIVIDUALS BRIEFCASES
-_________________________________ */
+} */
 
 #containerOfAllIndividualsBriefcases {
- /* border: var(--borderForestGreen); */
  display: -webkit-box;
  display: -ms-flexbox;
  display: flex;
@@ -456,38 +386,31 @@ _________________________________ */
  -ms-flex-pack: center;
  justify-content: center;
  margin-top: 5vw;
- height: 100%;
+ height: 100%
 }
 
-/* ______________________________ 
- CONTAINER OF EVERY SINGULAR BRIFCASE
-_________________________________ */
-
 .containerOfEverySingularBriefcase {
- /* border: var(--borderCoral); */
  width: 50%;
  height: 100%;
- padding: 30px 15px 15px 15px;
+ padding: 30px 15px 15px 15px
 }
 
 .internalContainer {
- /* border: var(--borderCyan); */
  margin-right: auto;
  margin-left: auto;
  width: 100%;
  height: 80%;
  -webkit-box-shadow: 1px 1px 11px 3px #080D10;
  box-shadow: 1px 1px 11px 3px #080D10;
- border-radius: 6px;
+ border-radius: 6px
 }
 
-.internalContainer:hover {
+/* .internalContainer:hover {
  -webkit-box-shadow: inset 1px 1px 11px 3px white;
- box-shadow: inset 1px 1px 11px 3px white;
-}
+ box-shadow: inset 1px 1px 11px 3px white
+} */
 
 .imgBriefcase {
- /* border: white 1px solid; */
  border: none;
  border-top-left-radius: 6px;
  border-top-right-radius: 6px;
@@ -505,19 +428,18 @@ _________________________________ */
  -webkit-box-align: center;
  -ms-flex-align: center;
  align-items: center;
- -webkit-transition: all 2000ms cubic-bezier(0.605, -0.600, 0.635, 1.610);
+ /* -webkit-transition: all 2000ms cubic-bezier(0.605, -0.600, 0.635, 1.610);
  -o-transition: all 2000ms cubic-bezier(0.605, -0.600, 0.635, 1.610);
- transition: all 2000ms cubic-bezier(0.605, -0.600, 0.635, 1.610);
+ transition: all 2000ms cubic-bezier(0.605, -0.600, 0.635, 1.610) */
 }
 
-.internalContainer:hover .imgBriefcase {
+/* .internalContainer:hover .imgBriefcase {
  -webkit-transform: scale(0.90, 0.90);
  -ms-transform: scale(0.90, 0.90);
- transform: scale(0.90, 0.90);
-}
+ transform: scale(0.90, 0.90)
+} */
 
 .paragraphOfBriefcase {
- /* border: white 1px solid; */
  border: none;
  border-top: none;
  border-bottom-right-radius: 6px;
@@ -534,228 +456,271 @@ _________________________________ */
  align-items: center;
  width: 100%;
  margin: auto;
- /* padding:2vh; */
  font-size: 3vw;
  line-height: 3.9vw;
  height: 10vw;
  font-family: "neontubes";
- -webkit-transform: translateZ(0) translate3D(0, 0, 0);
- transform: translateZ(0) translate3D(0, 0, 0);
- -webkit-backface-visibility: hidden;
- backface-visibility: hidden;
- will-change: opacity;
- text-shadow: 0 0 0 transparent, 0 0 10px #2695ff, 0 0 20px rgba(38, 149, 255, 0.5), 0 0 40px #2695ff, 0 0 100px #2695ff, 0 0 200px #2695ff, 0 0 300px #2695ff, 0 0 500px #2695ff;
- /* -webkit-animation: blinkParagraphOfBriefcase 1.8s infinite alternate; */
- /* animation: blinkParagraphOfBriefcase 1.8s forwards; */
+ text-shadow: 0 0 0 transparent, 0 0 10px #2695ff, 0 0 20px rgba(38, 149, 255, 0.5), 0 0 40px #2695ff, 0 0 100px #2695ff, 0 0 200px #2695ff, 0 0 300px #2695ff, 0 0 500px #2695ff
 }
 
-.internalContainer:hover .paragraphOfBriefcase {
+/* .internalContainer:hover .paragraphOfBriefcase {
  -webkit-animation: blinkParagraphOfBriefcase 1.8s forwards;
- animation: blinkParagraphOfBriefcase 1.8s forwards;
-}
+ animation: blinkParagraphOfBriefcase 1.8s forwards
+} */
 
-@-webkit-keyframes blinkParagraphOfBriefcase {
+/* @-webkit-keyframes blinkParagraphOfBriefcase {
  0% {
-  opacity: 0;
+  opacity: 0
  }
+
  10% {
-  opacity: 0;
+  opacity: 0
  }
+
  10.1% {
-  opacity: 1;
+  opacity: 1
  }
+
  10.2% {
-  opacity: 0;
+  opacity: 0
  }
+
  20% {
-  opacity: 0;
+  opacity: 0
  }
+
  20.1% {
-  opacity: 1;
+  opacity: 1
  }
+
  20.6% {
-  opacity: 0;
+  opacity: 0
  }
+
  30% {
-  opacity: 0;
+  opacity: 0
  }
+
  30.1% {
-  opacity: 1;
+  opacity: 1
  }
+
  30.5% {
-  opacity: 1;
+  opacity: 1
  }
+
  30.6% {
-  opacity: 0;
+  opacity: 0
  }
+
  45% {
-  opacity: 0;
+  opacity: 0
  }
+
  45.1% {
-  opacity: 1;
+  opacity: 1
  }
+
  50% {
-  opacity: 1;
+  opacity: 1
  }
+
  55% {
-  opacity: 1;
+  opacity: 1
  }
+
  55.1% {
-  opacity: 0;
+  opacity: 0
  }
+
  57% {
-  opacity: 0;
+  opacity: 0
  }
+
  57.1% {
-  opacity: 1;
+  opacity: 1
  }
+
  60% {
-  opacity: 1;
+  opacity: 1
  }
+
  60.1% {
-  opacity: 0;
+  opacity: 0
  }
+
  65% {
-  opacity: 0;
+  opacity: 0
  }
+
  65.1% {
-  opacity: 1;
+  opacity: 1
  }
+
  75% {
-  opacity: 1;
+  opacity: 1
  }
+
  75.1% {
-  opacity: 0;
+  opacity: 0
  }
+
  77% {
-  opacity: 0;
+  opacity: 0
  }
+
  77.1% {
-  opacity: 1;
+  opacity: 1
  }
+
  85% {
-  opacity: 1;
+  opacity: 1
  }
+
  85.1% {
-  opacity: 0;
+  opacity: 0
  }
+
  86% {
-  opacity: 0;
+  opacity: 0
  }
+
  86.1% {
-  opacity: 1;
+  opacity: 1
  }
+
  100% {
-  opacity: 1;
+  opacity: 1
  }
 }
 
 @keyframes blinkParagraphOfBriefcase {
  0% {
-  opacity: 0;
+  opacity: 0
  }
+
  10% {
-  opacity: 0;
+  opacity: 0
  }
+
  10.1% {
-  opacity: 1;
+  opacity: 1
  }
+
  10.2% {
-  opacity: 0;
+  opacity: 0
  }
+
  20% {
-  opacity: 0;
+  opacity: 0
  }
+
  20.1% {
-  opacity: 1;
+  opacity: 1
  }
+
  20.6% {
-  opacity: 0;
+  opacity: 0
  }
+
  30% {
-  opacity: 0;
+  opacity: 0
  }
+
  30.1% {
-  opacity: 1;
+  opacity: 1
  }
+
  30.5% {
-  opacity: 1;
+  opacity: 1
  }
+
  30.6% {
-  opacity: 0;
+  opacity: 0
  }
+
  45% {
-  opacity: 0;
+  opacity: 0
  }
+
  45.1% {
-  opacity: 1;
+  opacity: 1
  }
+
  50% {
-  opacity: 1;
+  opacity: 1
  }
+
  55% {
-  opacity: 1;
+  opacity: 1
  }
+
  55.1% {
-  opacity: 0;
+  opacity: 0
  }
+
  57% {
-  opacity: 0;
+  opacity: 0
  }
+
  57.1% {
-  opacity: 1;
+  opacity: 1
  }
+
  60% {
-  opacity: 1;
+  opacity: 1
  }
+
  60.1% {
-  opacity: 0;
+  opacity: 0
  }
+
  65% {
-  opacity: 0;
+  opacity: 0
  }
+
  65.1% {
-  opacity: 1;
+  opacity: 1
  }
+
  75% {
-  opacity: 1;
+  opacity: 1
  }
+
  75.1% {
-  opacity: 0;
+  opacity: 0
  }
+
  77% {
-  opacity: 0;
+  opacity: 0
  }
+
  77.1% {
-  opacity: 1;
+  opacity: 1
  }
+
  85% {
-  opacity: 1;
+  opacity: 1
  }
+
  85.1% {
-  opacity: 0;
+  opacity: 0
  }
+
  86% {
-  opacity: 0;
+  opacity: 0
  }
+
  86.1% {
-  opacity: 1;
+  opacity: 1
  }
+
  100% {
-  opacity: 1;
+  opacity: 1
  }
-}
-
-/* ______________________________ 
- BUTTON SHOW ALL
-_________________________________ */
-
-/* ______________________________ 
- FOOTER
-_________________________________ */
+} */
 
 #containerOfFooter {
- /* border: var(--borderCyan); */
  height: 100vh;
  background-color: var(--colorBaseEight5);
  display: -webkit-box;
@@ -775,11 +740,10 @@ _________________________________ */
  overflow: hidden;
  -webkit-box-shadow: inset 1px 1px 15px 1px black;
  box-shadow: inset 1px 1px 15px 1px black;
- border-radius: 6px;
+ border-radius: 6px
 }
 
 #letsWorkTogheter {
- /* border: var(--borderCyan); */
  padding: 10vh 0 15vh 0;
  font-size: 10vw;
  -webkit-transform: translateY(1vh);
@@ -789,7 +753,7 @@ _________________________________ */
  -ms-transform-origin: 50% 50%;
  transform-origin: 50% 50%;
  text-shadow: 0 -1px 0 #cccccc, 0 -2px 0 #cccccc, 0 -3px 0 #cccccc, 0 -4px 0 #cccccc, 0 -5px 0 #cccccc, 0 -6px 0 #cccccc, 0 -7px 0 #cccccc, 0 -8px 0 #cccccc, 0 -9px 0 #cccccc, 0 -50px 30px rgba(0, 0, 0, 0.3);
- color: #f05629;
+ color: #f05629
 }
 
 #paragraphOfTitleFooter {
@@ -801,18 +765,15 @@ _________________________________ */
  transform-origin: 50% 50%;
  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
  text-shadow: 0 -1px 0 #cccccc, 0 -2px 0 #cccccc, 0 -3px 0 #cccccc, 0 -4px 0 #cccccc, 0 -5px 0 #cccccc, 0 -6px 0 #cccccc, 0 -7px 0 #cccccc, 0 -8px 0 #cccccc, 0 -9px 0 #cccccc, 0 -50px 30px rgba(0, 0, 0, 0.3);
- color: #f05629;
+ color: #f05629
 }
 
 #paragraphOfTitleFooter {
- /* border: var(--borderForestGreen); */
  font-size: 7vw;
- /* padding: 3vw 0 3vw 0; */
- margin-top: 10vh;
+ margin-top: 10vh
 }
 
 #containerOfSocialNetworks {
- /* border:var(--borderBlack); */
  display: -webkit-box;
  display: -ms-flexbox;
  display: flex;
@@ -826,12 +787,10 @@ _________________________________ */
  -webkit-box-align: center;
  -ms-flex-align: center;
  align-items: center;
- margin-top: 2vh;
- /* height:1vh; */
+ margin-top: 2vh
 }
 
 .socialNetwork {
- /* border: var(--borderCrimson); */
  margin: 4.9vw 2vw 0;
  font-size: 4vw;
  padding: 1vw;
@@ -844,15 +803,12 @@ _________________________________ */
  flex-flow: column wrap;
  -webkit-box-align: center;
  -ms-flex-align: center;
- align-items: center;
+ align-items: center
 }
 
 .socialNetwork:hover {
- /* color: var(--colorBaseFive5); */
- /* background-color: var(--colorBaseTeen5); */
  padding: auto;
- /* text-decoration: underline; */
- border-radius: 6px;
+ border-radius: 6px
 }
 
 .socialNetwork .iconOfSocialNetwork {
@@ -860,134 +816,66 @@ _________________________________ */
  opacity: 0;
  -webkit-transition: opacity 1s linear;
  -o-transition: opacity 1s linear;
- transition: opacity 1s linear;
- /* margin-top: 5vh; */
+ transition: opacity 1s linear
 }
 
 .socialNetwork:hover .iconOfSocialNetwork {
- opacity: 1;
+ opacity: 1
 }
 
-.socialNetwork:hover #linkedinIcon {
- -webkit-animation: movingLinkedinIcon 1s forwards;
- animation: movingLinkedinIcon 1s forwards;
-}
-
-@-webkit-keyframes movingLinkedinIcon {
- 0% {
-  -webkit-transform: translateX(800px) rotateY(-30deg) scale(0);
-  transform: translateX(800px) rotateY(-30deg) scale(0);
-  -webkit-transform-origin: -100% 50%;
-  transform-origin: -100% 50%;
- }
- 100% {
-  -webkit-transform: translateX(0) rotateY(0) scale(1);
-  transform: translateX(0) rotateY(0) scale(1);
-  -webkit-transform-origin: -1800px 50%;
-  transform-origin: -1800px 50%;
- }
-}
-
-@keyframes movingLinkedinIcon {
- 0% {
-  -webkit-transform: translateX(800px) rotateY(-30deg) scale(0);
-  transform: translateX(800px) rotateY(-30deg) scale(0);
-  -webkit-transform-origin: -100% 50%;
-  transform-origin: -100% 50%;
- }
- 100% {
-  -webkit-transform: translateX(0) rotateY(0) scale(1);
-  transform: translateX(0) rotateY(0) scale(1);
-  -webkit-transform-origin: -1800px 50%;
-  transform-origin: -1800px 50%;
- }
-}
-
-.socialNetwork:hover #twitterIcon {
+.socialNetwork:hover .fadedIcon {
  -webkit-animation: movingTwitterIcon 1.5s forwards;
- animation: movingTwitterIcon 1.5s forwards;
+ animation: movingTwitterIcon 1.5s forwards
 }
 
 @-webkit-keyframes movingTwitterIcon {
  0% {
   -webkit-transform: translateZ(-1400px);
-  transform: translateZ(-1400px);
+  transform: translateZ(-1400px)
  }
+
  100% {
   -webkit-transform: translateZ(0);
-  transform: translateZ(0);
+  transform: translateZ(0)
  }
 }
 
 @keyframes movingTwitterIcon {
  0% {
   -webkit-transform: translateZ(-1400px);
-  transform: translateZ(-1400px);
+  transform: translateZ(-1400px)
  }
+
  100% {
   -webkit-transform: translateZ(0);
-  transform: translateZ(0);
+  transform: translateZ(0)
  }
 }
 
-.socialNetwork:hover #githubIcon {
- -webkit-animation: movingGithubIcon 1s forwards;
- animation: movingGithubIcon 1s forwards;
-}
-
-@-webkit-keyframes movingGithubIcon {
- 0% {
-  -webkit-transform: translateX(-800px) rotateY(30deg) scale(0);
-  transform: translateX(-800px) rotateY(30deg) scale(0);
-  -webkit-transform-origin: -100% 50%;
-  transform-origin: -100% 50%;
- }
- 100% {
-  -webkit-transform: translateX(0) rotateY(0) scale(1);
-  transform: translateX(0) rotateY(0) scale(1);
-  -webkit-transform-origin: 1800px 50%;
-  transform-origin: 1800px 50%;
- }
-}
-
-@keyframes movingGithubIcon {
- 0% {
-  -webkit-transform: translateX(-800px) rotateY(30deg) scale(0);
-  transform: translateX(-800px) rotateY(30deg) scale(0);
-  -webkit-transform-origin: -100% 50%;
-  transform-origin: -100% 50%;
- }
- 100% {
-  -webkit-transform: translateX(0) rotateY(0) scale(1);
-  transform: translateX(0) rotateY(0) scale(1);
-  -webkit-transform-origin: 1800px 50%;
-  transform-origin: 1800px 50%;
- }
-}
-
-/* ______________________________ 
- MEDIA QUERIES
-_________________________________ */
 
 @media only screen and (max-width: 960px) {
  #JuanPastenCastillo {
   font-size: 5vh;
-  line-height: 4rem;
+  line-height: 4rem
  }
+
  .paragraphOfHeader {
   font-size: 4vh;
-  line-height: 2.2rem;
+  line-height: 2.2rem
  }
+
  .paragraphOfHeader:last-child {
-  margin-top: 30px;
+  margin-top: 30px
  }
- .waves {
-  height: 150px;
- }
+
+ /* .waves {
+  height: 150px
+ } */
+
  #letsWorkTogheter {
   font-size: 12vh;
   padding: 0 0 6vh 0;
-  line-height: 10vh;
+  line-height: 10vh
  }
 }
 
@@ -995,57 +883,64 @@ _________________________________ */
  #JuanPastenCastillo {
   padding-top: 75px;
   text-align: center;
-  margin-bottom: 2vh;
+  margin-bottom: 2vh
  }
+
  .waves {
-  height: 50px;
+  height: 50px
  }
+
  #myWorks {
   font-size: 6vh;
-  line-height: 7.9vh;
+  line-height: 7.9vh
  }
+
  .containerOfEverySingularBriefcase {
-  width: 100vw;
+  width: 100vw
  }
+
  .imgBriefcase {
-  height: 40vh;
+  height: 40vh
  }
+
  .paragraphOfBriefcase {
   font-size: 3vh;
   height: 13vh;
-  line-height: 3.9vh;
-  /* padding-top: 2vh; */
-  /* padding-bottom: 2vh; */
+  line-height: 3.9vh
  }
+
  #containerOfFooter {
   height: 113vh;
  }
+
  #letsWorkTogheter {
   margin: 18vh 0 0 0;
+  font-size: 3rem;
  }
+
  #paragraphOfTitleFooter {
   margin: 0;
   font-size: 6vh;
   line-height: 7vh;
-  margin: 1vh 0 0 0;
+  margin: 1vh 0 0 0
  }
+
  #containerOfSocialNetworks {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-flow: column;
-  flex-flow: column;
+  flex-flow: column
  }
+
  .socialNetwork {
-  font-size: 4vh;
+  font-size: 4vh
  }
 }
 
 @media only screen and (max-width: 380px) {
  .paragraphOfHeader {
-  /* background-color: rgba(5, 69, 90, 0.78); */
   font-size: 3vh;
   border-radius: 6px;
-  /* width: 212px; */
   margin: auto;
   line-height: 2.9rem;
   display: -webkit-box;
@@ -1053,26 +948,28 @@ _________________________________ */
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: center
  }
+
  #myWorks {
   font-size: 3.5vh;
-  line-height: 5.9vh;
+  line-height: 5.9vh
  }
+
  .containerOfEverySingularBriefcase {
-  width: 100vw;
+  width: 100vw
  }
+
  .imgBriefcase {
-  height: 30vh;
+  height: 30vh
  }
+
  .paragraphOfBriefcase {
   font-size: 2.0vh;
-  height: 13vh;
+  height: 13vh
  }
- #letsWorkTogheter {
-  font-size: 6vh;
- }
+
  #paragraphOfTitleFooter {
-  font-size: 5vh;
+  font-size: 5vh
  }
 }
